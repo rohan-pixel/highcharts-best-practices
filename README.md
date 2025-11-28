@@ -67,7 +67,6 @@ This project demonstrates advanced performance techniques including virtualizati
 
 
 
-```
 
  🛠️ How to Run the Project
 
