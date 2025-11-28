@@ -69,20 +69,17 @@ This project demonstrates advanced performance techniques including virtualizati
  📂 Folder Structure
 
 src/
-│── components/
-│   │── Chart.jsx
-│   │── StaticCharts.jsx
-│   │── DynamicCharts.jsx
-│   │── Loading.jsx
-│   │── ErrorBoundary.jsx
-│   │── SomethingWentWrong.jsx
-│
-│── utils/
-│   └── generateChartData.js
-│
-│── assets/
-│   └── loading.gif
-│
+├── components/
+│ ├── Chart.jsx
+│ ├── StaticCharts.jsx
+│ ├── DynamicCharts.jsx
+│ ├── Loading.jsx
+│ ├── ErrorBoundary.jsx
+│ └── SomethingWentWrong.jsx
+├── utils/
+│ └── generateChartData.js
+├── assets/
+│ └── loading.gif
 └── App.jsx
 ```
 
