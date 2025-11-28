@@ -77,7 +77,7 @@ git clone https://github.com/rohan-pixel/highcharts-best-practices.git
 ```
 
 ```
-cd your-repo-name
+cd highcharts-best-practices
 ```
 
  2. Install Dependencies
