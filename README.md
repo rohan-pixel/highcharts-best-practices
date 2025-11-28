@@ -109,11 +109,11 @@ npm run build
 * High-frequency updates (1-second intervals) require careful memory cleanup.
 * Highcharts dynamic imports must be handled carefully to avoid race conditions.
 
+_______________________________________________________________________________________________________________________
 
 
 
-
-Objective:
+## Objective:
 Enhance the performance of a chart application that consists of two pages. The first page involves creating 50 Highcharts with static data, while the second page updates charts every second.
 
 
