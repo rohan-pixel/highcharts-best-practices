@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f8fe;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  min-height: 100vh;
+  padding: 0.5rem 1.2rem;
+}
+
+.algnRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  /* border-bottom: 1px solid gray; */
+}
+
+.algnRow.center {
+  justify-content: center;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.btn {
+  padding: 0.5rem 1.2rem;
+  background-color: blue;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: white;
+  color: blue;
+}
+
+.chart-container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.list-container {
+  width: 100%;
+}
+
+/* skeleton loading animation */
+.skeleton {
+  background-color: #f5f5f5;
+  animation: skeleton-loading 1s infinite linear;
+  min-height: 320px;
+  width: 100%;
+  /* -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47); */
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+
+/* Animated futuristic gradient background */
+.dashboard-wrapper {
+  min-height: 100vh;
+  padding: 30px;
+  background: linear-gradient(120deg, #0b0f27, #131a33, #0f172a);
+  background-size: 300% 300%;
+  animation: gradientShift 12s infinite ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Sticky blurred top header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(12px);
+}
+
+/* Futuristic neon typography */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.title {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin: 0;
+  color: #00eaff;
+}
+
+.neon-text {
+  text-shadow: 0 0 12px rgba(0,255,255,0.7);
+}
+
+/* Neon button */
+.btn-neon {
+  background: linear-gradient(90deg, #00eaff, #0072ff);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bold;
+  font-family: "Orbitron";
+  text-decoration: none;
+  box-shadow: 
+    0 0 10px rgba(0,255,255,0.6),
+    0 0 40px rgba(0,255,255,0.3);
+  transition: 0.3s ease;
+}
+
+.btn-neon:hover {
+  box-shadow: 
+    0 0 15px rgba(0,255,255,1),
+    0 0 60px rgba(0,255,255,0.7);
+  transform: translateY(-2px);
+}
+
+/* Chart grid layout */
+.charts-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 25px;
+}
+
+/* Glassmorphic chart card */
+.glass-card {
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  transform: translateY(40px);
+  opacity: 0;
+  transition: transform 0.7s ease, opacity 0.7s ease, box-shadow 0.3s;
+}
+
+.glass-card:hover {
+  box-shadow: 0 14px 40px rgba(0, 255, 255, 0.3);
+  transform: translateY(-6px);
+}
+
+/* Fade in when scrolled into view */
+.chart-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hologram cursor glow effect */
+.mouse-glow {
+  position: fixed;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(0,255,255,0.25), transparent 70%);
+  z-index: 999;
+}
+
+/* No data text */
+.no-data {
+  font-family: "Orbitron";
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 22px;
+}
+
+
+.glass-header:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+}
+
+.chart-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+
