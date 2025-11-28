@@ -66,21 +66,7 @@ This project demonstrates advanced performance techniques including virtualizati
 | Styling        | Custom inline/futuristic glass UI |
 
 
- 📂 Folder Structure
 
-src/
-├── components/
-│ ├── Chart.jsx
-│ ├── StaticCharts.jsx
-│ ├── DynamicCharts.jsx
-│ ├── Loading.jsx
-│ ├── ErrorBoundary.jsx
-│ └── SomethingWentWrong.jsx
-├── utils/
-│ └── generateChartData.js
-├── assets/
-│ └── loading.gif
-└── App.jsx
 ```
 
  🛠️ How to Run the Project
@@ -88,7 +74,10 @@ src/
  1. Clone Repository
 
 ```bash
-git clone https://github.com/your-repo-name
+git clone https://github.com/rohan-pixel/highcharts-best-practices.git
+```
+
+```
 cd your-repo-name
 ```
 
@@ -112,18 +101,6 @@ yarn start
 
 ```bash
 npm run build
-```
-
-📸 UI Overview (Screenshots Placeholder)
-
-> Add screenshots here after running the app:
-
-```
-/screenshots/
-   static-page.png
-   dynamic-page.png
-   chart-card.png
-   error-boundary.png
 ```
 
 
